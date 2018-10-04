@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+	<div>
+		<p>publicado: {{ post.published_date }}</p>
+		<h3>{{ post }}</h3>
+		<p>{{ post.text|linebreaksbr }}</p>
+	</div>
+
+{% endblock %}
